@@ -1,13 +1,13 @@
-import ClassComponent from '../../components/ClassComponent';
-import FuncComponent from '../../components/FuncComponent';
+import ClassComponent from "../../components/ClassComponent";
+import FuncComponent from "../../components/FuncComponent";
+import Header from "../../components/Header";
 
 function HomePage() {
   const x = 5;
   return (
-    <div className="App">
-      <ClassComponent test="test" test2={x}/>
-      <FuncComponent />
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 

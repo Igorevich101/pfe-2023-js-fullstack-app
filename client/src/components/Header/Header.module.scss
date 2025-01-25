@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  max-height: 120px;
+  padding: 20px;
+  background-color: $header-bg;
+  color: $navlink-color;
+  font-size: 20px;
+  // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif';
+}
+
+.link{
+  padding: 20px;
+}
+
+.navList {
+  display:flex;
+  gap: 20px;
+
+
+}
+
+.activeLink{
+  background-color: $navlink-active-bg;
+  border-color: $navlink-current-color;
+}
