@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import styles from './FuncComponent.module.scss';
 
 function FuncComponents(props) {
   const { test, test2, isOn } = props;
@@ -17,7 +18,7 @@ function FuncComponents(props) {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1>FuncComponents</h1>
       <p> test is {test}</p>
       <p> test2 is {test2}</p>

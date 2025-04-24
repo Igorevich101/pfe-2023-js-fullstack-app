@@ -1,0 +1,7 @@
+@import '../../styles/templates';
+
+.container {
+  background-color: darkblue;
+  @extend %container;
+  color: white;
+}
