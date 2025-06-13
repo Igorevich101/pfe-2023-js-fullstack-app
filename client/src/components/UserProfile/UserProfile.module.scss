@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+
+  &Heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  align-self: center;
+
+  .img {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    inset: 0;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &Heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &List {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.listItems {
+}
+
+.detailsText {
+  &Bold {
+    font-weight: bold;
+  }
+}
