@@ -1,10 +1,11 @@
-import { createContext } from 'react';
+import { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/Home';
 import ProfilePage from './pages/Profile';
 import RegistrationPage from './pages/Registration';
+import UserContext from './contexts/userContext';
 
-const user = {
+const userMockData = {
   id: 1,
   firstName: 'Test',
   lastName: 'Testovich',
@@ -14,11 +15,11 @@ const user = {
   isMale: true,
 };
 
-const UserContext = createContext();
-
 function App() {
+  const [user, setUser] = useState(userMockData);
+
   return (
-    <UserContext.Provider value={user}>
+    <UserContext.Provider value={[user, setUser]}>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/registration" component={RegistrationPage} />
